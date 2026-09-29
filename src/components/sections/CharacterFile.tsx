@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ShieldCheck, Zap, User, Crosshair, Award, Cpu, Activity } from 'lucide-react';
 import { sound } from '../../lib/sound';
+import biometricPhoto from '../../assets/avatar-biometric.jpg';
 
 export const CharacterFile = () => {
   const [activeTab, setActiveTab] = useState<'profile' | 'directives' | 'specs'>('profile');
@@ -34,7 +35,7 @@ export const CharacterFile = () => {
           <div className="relative w-full max-w-2xl aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden border-2 border-cyan-500/50 shadow-2xl shadow-cyan-950/60 group bg-slate-950">
             {/* The Authentic Photo positioned so face and laptop are 100% visible */}
             <img
-              src="/avatar-biometric.jpg"
+              src={biometricPhoto}
               alt="Atlee Kumaar (Atul Shukla) - CHARACTER-07 Biometric Archive"
               className="w-full h-full object-cover object-[15%_25%] filter contrast-110 group-hover:contrast-125 transition-all duration-700"
             />
