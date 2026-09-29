@@ -3,8 +3,8 @@ import { sound } from '../../lib/sound';
 import { NeuralCore } from '../3d/NeuralCore';
 import { GlitchText } from '../ui/GlitchText';
 import { GithubIcon } from '../ui/Icons';
-import { ArrowRight, ExternalLink, Cpu, Activity, Crosshair, ShieldCheck } from 'lucide-react';
-import biometricPhoto from '../../assets/avatar-biometric.jpg';
+import { ArrowRight, ExternalLink, Cpu, Activity, Crosshair } from 'lucide-react';
+import heroPortrait from '../../assets/hero-portrait.jpg';
 
 interface HeroProps {
   onExploreMissions: () => void;
@@ -121,11 +121,11 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMissions }) => {
             </div>
 
             {/* Photo Container */}
-            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-cyan-500/50 bg-slate-950 group">
+            <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-xl overflow-hidden border border-cyan-500/50 bg-slate-950 group">
               <img
-                src={biometricPhoto}
+                src={heroPortrait}
                 alt="Atlee Kumaar (Atul Shukla) - Biometric Identity"
-                className="w-full h-full object-cover object-[15%_25%] filter contrast-110 group-hover:contrast-125 transition-all duration-700"
+                className="w-full h-full object-cover object-[center_15%] filter contrast-105 group-hover:contrast-120 group-hover:scale-105 transition-all duration-700"
               />
 
               {/* HUD Reticle */}
