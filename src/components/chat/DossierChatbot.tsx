@@ -25,6 +25,54 @@ const KNOWLEDGE_RESPONSES: {
     jumpLabel: 'VIEW CHARACTER FILE'
   },
   {
+    keywords: ['bharat', 'bharat-x', 'indic', 'manuscript', 'heritage', 'sanskrit', 'ocr', 'msn-002', 'cultural'],
+    response: "**BHĀRAT-X** (MSN-002) is an Advanced AI Foundation for Historical Indic Manuscripts & Cultural Heritage. Key verified metrics include:\n• **94.80% OCR Accuracy** on degraded historical folios\n• **4 / 4 Execution Phases** (Ingestion to Knowledge Graph)\n• **38.2 ms/page** high-throughput neural inference\n• Supports Devanagari, Grantha, Brahmi, and historical Indic scripts.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE BHĀRAT-X'
+  },
+  {
+    keywords: ['tumor', 'mri', 'brain', 'medical', 'cancer', 'glioma', 'meningioma', 'pituitary', 'msn-003', 'clinical', 'radiology'],
+    response: "**BRAIN TUMOR MRI NEURAL CLASSIFIER** (MSN-003) is a clinical-grade medical AI diagnostics system:\n• **98.20% Diagnostic Accuracy** across 4 pathology classes\n• **18.40 ms** inference latency\n• **96.50% Grad-CAM Heatmap Localization** agreement with certified radiologists.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE BRAIN TUMOR CLASSIFIER'
+  },
+  {
+    keywords: ['rag', 'retrieval', 'personalized', 'chatbot', 'vector', 'embeddings', 'hnsw', 'msn-004', 'context'],
+    response: "**PERSONALIZED CONTEXT-AWARE RAG SYSTEM** (MSN-004) fuses dense vector retrieval with dynamic user persona state machines:\n• **<12 ms Vector Retrieval** across 100k+ embedded documents\n• **96.40% Top-3 Precision** with cross-encoder re-ranking\n• **88.50% Hallucination Reduction** compared to vanilla LLMs.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE RAG SYSTEM'
+  },
+  {
+    keywords: ['vyapar', 'vyaparmitra', 'retail', 'merchant', 'dukaan', 'invoice', 'ledger', 'voice', 'msn-005', 'business'],
+    response: "**VYAPARMITRA** (MSN-005) is an AI Business Assistant for Indian Retail Merchants:\n• **95.20% Vernacular Intent Accuracy** (Hindi, Hinglish)\n• **1.15s** automated receipt OCR to ledger calculation\n• **100% Deterministic** double-entry bookkeeping validation.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE VYAPARMITRA'
+  },
+  {
+    keywords: ['slm', 'small language model', 'jax', 'keras', 'scratch', '3.5m', 'transformer', 'msn-006', 'pretrain'],
+    response: "**NEURAL SLM (3.5M PARAMETERS)** (MSN-006) is a lightweight causal Transformer built completely from scratch:\n• **3.5M Parameters** with RoPE + SwiGLU + RMSNorm\n• **JAX / Keras 3** JIT-compiled high-throughput pre-training\n• Full custom autoregressive tokenizer & sampling runtime.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE NEURAL SLM'
+  },
+  {
+    keywords: ['kimi', 'k3', 'kda', 'gated mla', 'mla', 'moe', 'latent moe', 'attnres', 'msn-007'],
+    response: "**KIMI K3 ARCHITECTURE RESEARCH** (MSN-007) is a PyTorch reproduction of frontier reasoning attention mechanisms:\n• **4x KV Cache Compression** via Gated Multi-Head Latent Attention (MLA)\n• **Kernel Dense Attention (KDA)** for sub-quadratic context scaling\n• **99.70% Expert Load Balancing** in Stable Latent MoE.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE KIMI K3 REPRODUCTION'
+  },
+  {
+    keywords: ['netra', 'surveillance', 'vision', 'tracking', 'camera', 'yolo', 'mot', 'msn-008'],
+    response: "**NETRA** (MSN-008) is an Edge Multimodal Perception Engine:\n• **60+ FPS Real-Time Video Throughput** on edge GPUs\n• **15.8 ms** detection and spatial anomaly classification\n• **98.60% Identity Tracking Retention** across occlusions.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE NETRA'
+  },
+  {
+    keywords: ['agentvault', 'agent vault', 'sandbox', 'control plane', 'msn-009', 'agent infra'],
+    response: "**AGENTVAULT** (MSN-009) is an Autonomous Agent Control Plane & Sandbox Runtime:\n• Containerized Docker/WASM sandboxed tool execution\n• Graph-based state machine orchestrators with automated checkpoint rollbacks\n• Two-tier episodic vector memory core.",
+    jumpTarget: '#missions',
+    jumpLabel: 'EXPLORE AGENTVAULT'
+  },
+  {
     keywords: ['lidar', 'mission', 'project', '52.05', 'benchmark', 'fps', 'msn-001', 'perception', 'foveated', 'point cloud', 'spvcnn', 'kaam', 'projects'],
     response: "Mission 001 is **FOVEATED 2.5D LiDAR MAPPING** for autonomous navigation. Key verified hardware benchmarks include:\n• **52.05% mIoU** on semantic point cloud segmentation\n• **23.37 ms** latency\n• **42.79 FPS** real-time throughput\n• **99.93%** prediction agreement\n• **0 / 100** dropped frames in stress testing\nBuilt with PyTorch, CUDA, Open3D, OpenCV, SPVCNN, and PointNet++.",
     jumpTarget: '#missions',
