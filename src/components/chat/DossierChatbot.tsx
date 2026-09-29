@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { sound } from '../../lib/sound';
 import { Bot, X, Send, Sparkles, Terminal, Minimize2, Maximize2, ExternalLink, ArrowRight, User } from 'lucide-react';
+import chatbotAvatar from '../../assets/chatbot-avatar.png';
 
 interface ChatMessage {
   id: string;
@@ -164,8 +165,8 @@ export const DossierChatbot = () => {
             data-cursor="AI BOT"
           >
             <div className="relative">
-              <div className="w-8 h-8 rounded-full bg-cyan-950 border border-cyan-400 flex items-center justify-center text-cyan-300">
-                <Bot className="w-4 h-4" />
+              <div className="w-9 h-9 rounded-full bg-cyan-950/80 border border-cyan-400/80 flex items-center justify-center overflow-hidden p-0.5 shadow-[0_0_12px_rgba(6,182,212,0.45)]">
+                <img src={chatbotAvatar} alt="AI Assistant" className="w-full h-full object-contain drop-shadow-[0_0_6px_rgba(6,182,212,0.7)] group-hover:scale-110 transition-transform duration-300" />
               </div>
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 absolute -top-0.5 -right-0.5 border-2 border-[#080c14] animate-pulse" />
             </div>
@@ -191,8 +192,8 @@ export const DossierChatbot = () => {
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-slate-950/90 border-b border-slate-800 shrink-0">
             <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 rounded-lg bg-cyan-950 border border-cyan-400/80 flex items-center justify-center text-cyan-300">
-                <Bot className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-full bg-cyan-950/80 border border-cyan-400/80 flex items-center justify-center overflow-hidden p-0.5 shadow-[0_0_8px_rgba(6,182,212,0.4)]">
+                <img src={chatbotAvatar} alt="AI Assistant" className="w-full h-full object-contain drop-shadow-[0_0_4px_rgba(6,182,212,0.6)]" />
               </div>
               <div>
                 <div className="text-xs font-bold text-white flex items-center gap-1.5">
@@ -236,7 +237,7 @@ export const DossierChatbot = () => {
                     key={msg.id}
                     className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}
                   >
-                    <div className="flex items-center gap-1 text-[10px] text-slate-500 font-mono mb-1">
+                    <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-mono mb-1">
                       {msg.sender === 'user' ? (
                         <>
                           <span>VISITOR</span>
@@ -245,6 +246,7 @@ export const DossierChatbot = () => {
                         </>
                       ) : (
                         <>
+                          <img src={chatbotAvatar} alt="C-07" className="w-3.5 h-3.5 object-contain inline-block drop-shadow-[0_0_4px_rgba(6,182,212,0.6)]" />
                           <span className="text-cyan-400 font-bold">C-07 AGENT</span>
                           <span>•</span>
                           <span>{msg.timestamp}</span>
